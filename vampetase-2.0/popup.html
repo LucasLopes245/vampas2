@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vampetase 2.0</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <main>
+    <header>
+      <img src="icons/icon48.png" alt="Ícone da Vampetase" width="45" height="45">
+      <div>
+        <h1>Vampetase <span>2.0</span></h1>
+        <p>Todo site merece um Vampeta.</p>
+      </div>
+    </header>
+
+    <section class="panel">
+      <label class="setting main-switch" for="enabled">
+        <span>
+          <strong>Vampetização</strong>
+          <small id="status">Ativada</small>
+        </span>
+        <input id="enabled" class="toggle" type="checkbox" checked>
+      </label>
+
+      <div class="separator"></div>
+
+      <label class="range-label" for="intensity">
+        <span>Intensidade da zoeira</span>
+        <strong id="intensityLabel">100%</strong>
+      </label>
+      <input id="intensity" type="range" min="0" max="100" step="5" value="100">
+      <div class="range-ends"><span>0%</span><span>100%</span></div>
+
+      <div class="separator"></div>
+
+      <label class="photo-label" for="photoMode">Coleção de fotos</label>
+      <select id="photoMode">
+        <option value="classic">Clássicas (6 originais)</option>
+        <option value="mixed">Todas misturadas (10 fotos)</option>
+        <option value="licensed">Alternativas (4 fotos)</option>
+      </select>
+
+      <div class="separator"></div>
+
+      <label class="setting" for="backgrounds">
+        <span>
+          <strong>Imagens de fundo</strong>
+          <small>CSS — modo experimental</small>
+        </span>
+        <input id="backgrounds" class="toggle" type="checkbox">
+      </label>
+
+      <label class="setting site-switch" for="disableSite">
+        <span>
+          <strong>Pausar neste site</strong>
+          <small id="siteLabel">Detectando site...</small>
+        </span>
+        <input id="disableSite" class="toggle" type="checkbox" disabled>
+      </label>
+    </section>
+
+    <p class="note">As fotos são locais e funcionam sem conexão. As 6 fotos clássicas foram recuperadas do projeto original. Recarregue a aba se alguma imagem não mudar.</p>
+    <footer>
+      <span>Feito para a zoeira 🇧🇷</span>
+      <a href="https://github.com/famoraes/vampetase" target="_blank" rel="noopener noreferrer">Projeto original ↗</a>
+    </footer>
+  </main>
+  <script src="popup.js"></script>
+</body>
+</html>

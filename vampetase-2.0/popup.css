@@ -1,0 +1,40 @@
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  width: 340px;
+  background: #09140f;
+  color: #eaf7ec;
+  font: 13px/1.45 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+main { padding: 18px; }
+header { display: flex; align-items: center; gap: 12px; margin-bottom: 18px; }
+header img { border-radius: 12px; background: #1b3728; object-fit: contain; }
+h1 { margin: 0; font-size: 20px; line-height: 1.1; letter-spacing: -.5px; }
+h1 span { color: #e8d65b; }
+header p { color: #a7c5b4; margin: 5px 0 0; font-size: 11px; }
+.panel { background: #14271d; padding: 15px; border: 1px solid #2e4c39; border-radius: 15px; }
+.setting { display: flex; justify-content: space-between; align-items: center; gap: 16px; cursor: pointer; }
+.setting > span { display: flex; flex-direction: column; gap: 3px; }
+.setting strong { font-size: 13px; font-weight: 650; }
+.setting small { font-size: 11px; color: #a2bca9; max-width: 220px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.main-switch strong { font-size: 15px; }
+#status { color: #8beba3; }
+.separator { height: 1px; background: #31503a; margin: 16px 0; }
+.toggle { appearance: none; flex: 0 0 auto; width: 41px; height: 24px; border-radius: 20px; background: #526459; position: relative; cursor: pointer; outline-offset: 3px; transition: background .16s; }
+.toggle::after { content: ""; position: absolute; width: 18px; height: 18px; top: 3px; left: 3px; border-radius: 50%; background: #f5f7ed; transition: transform .16s; }
+.toggle:checked { background: #47bb69; }
+.toggle:checked::after { transform: translateX(17px); }
+.toggle:disabled { opacity: .4; cursor: not-allowed; }
+.range-label { display: flex; align-items: center; justify-content: space-between; margin-bottom: 7px; }
+.range-label strong { color: #e8d65b; font-size: 16px; }
+input[type=range] { width: 100%; margin: 4px 0; accent-color: #6ed68b; }
+.range-ends { display: flex; justify-content: space-between; color: #8ea896; font-size: 10px; }
+.photo-label { display: block; font-weight: 650; margin-bottom: 8px; }
+select { width: 100%; border: 1px solid #4b7657; background: #0c1b12; color: #eaf7ec; border-radius: 8px; padding: 10px; font: inherit; }
+.site-switch { margin-top: 18px; }
+.note { font-size: 11px; line-height: 1.55; color: #a9bbac; margin: 13px 2px; }
+footer { display: flex; align-items: center; justify-content: space-between; padding: 8px 2px 0; color: #769885; font-size: 10px; }
+footer a { color: #c0d7a0; text-decoration: none; }
+footer a:hover { text-decoration: underline; }
+input:focus-visible, a:focus-visible { outline: 2px solid #f0db72; }
